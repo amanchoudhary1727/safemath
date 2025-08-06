@@ -9,7 +9,7 @@ description = "Production-ready safe mathematical operations for Python"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
-    {name = "SafeMath Team", email = "team@safemath.dev"}
+    {name = "Aman Choudhary", email = "aman.1727.2706@gmail.com"}
 ]
 keywords = ["math", "safe", "numpy", "pandas", "operations", "fallback"]
 classifiers = [
