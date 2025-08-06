@@ -45,9 +45,9 @@ dev = [
 
 [project.urls]
 Homepage = "https://github.com/username/safemath"
-Documentation = "https://github.com/username/safemath#readme"
-Repository = "https://github.com/username/safemath"
-"Bug Tracker" = "https://github.com/username/safemath/issues"
+Documentation = "https://github.com/amanchoudhary1727/safemath#readme"
+Repository = "https://github.com/amanchoudhary1727/safemath"
+"Bug Tracker" = "https://github.com/amanchoudhary1727/safemath/issues"
 
 [project.scripts]
 safemath = "safemath.cli:main"
