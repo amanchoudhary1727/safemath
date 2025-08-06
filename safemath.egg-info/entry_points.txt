@@ -1,0 +1,2 @@
+[console_scripts]
+safemath = safemath.cli:main
