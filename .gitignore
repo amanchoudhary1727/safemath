@@ -1,0 +1,16 @@
+# Ignore distribution/build artifacts
+/dist/
+dist/
+*.egg-info/
+build/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

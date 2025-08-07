@@ -1,3 +1,4 @@
+LICENSE
 README.md
 pyproject.toml
 setup.py
@@ -15,5 +16,6 @@ safemath.egg-info/entry_points.txt
 safemath.egg-info/requires.txt
 safemath.egg-info/top_level.txt
 tests/test_core.py
+tests/test_numpy.py
 tests/test_pandas.py
 tests/test_safenumber.py

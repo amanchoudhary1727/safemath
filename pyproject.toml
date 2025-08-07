@@ -1,71 +1,40 @@
 [build-system]
-requires = ["setuptools>=45", "wheel"]
+requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "safemath"
 version = "1.0.0"
-description = "Production-ready safe mathematical operations for Python"
+authors = [
+    {name = "Aman Choudhary", email = "aman.1727.2706@gmail.com"},
+]
+description = "Bulletproof mathematical operations for Python with intelligent fallback handling"
 readme = "README.md"
 license = {text = "MIT"}
-authors = [
-    {name = "Aman Choudhary", email = "aman.1727.2706@gmail.com"}
-]
-keywords = ["math", "safe", "numpy", "pandas", "operations", "fallback"]
+requires-python = ">=3.8"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
-    "Intended Audience :: Science/Research",
+    "Intended Audience :: Science/Research", 
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "Topic :: Scientific/Engineering :: Mathematics",
-    "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-requires-python = ">=3.7"
+keywords = ["math", "safe", "numpy", "pandas", "division-by-zero"]
 dependencies = [
     "numpy>=1.19.0",
     "pandas>=1.3.0",
 ]
 
-[project.optional-dependencies]
-dev = [
-    "pytest>=6.0",
-    "pytest-cov>=2.10",
-    "black>=21.0",
-    "flake8>=3.8",
-    "mypy>=0.910",
-]
-
 [project.urls]
-Homepage = "https://github.com/username/safemath"
-Documentation = "https://github.com/amanchoudhary1727/safemath#readme"
-Repository = "https://github.com/amanchoudhary1727/safemath"
-"Bug Tracker" = "https://github.com/amanchoudhary1727/safemath/issues"
+Homepage = "https://github.com/yourusername/safemath"
+Repository = "https://github.com/yourusername/safemath"
 
 [project.scripts]
 safemath = "safemath.cli:main"
-
-[tool.setuptools.packages.find]
-include = ["safemath*"]
-
-[tool.black]
-line-length = 88
-target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-python_files = ["test_*.py"]
-addopts = "--cov=safemath --cov-report=html --cov-report=term-missing"
-
-[tool.mypy]
-python_version = "3.7"
-warn_return_any = true
-warn_unused_configs = true
-disallow_untyped_defs = true
